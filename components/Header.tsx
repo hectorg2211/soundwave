@@ -19,7 +19,12 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
   }
 
   return (
-    <div className={twMerge('h-fit bg-gradient-to-b from-orange-800 p-6', className)}>
+    <div
+      className={twMerge(
+        'h-fit bg-gradient-to-b from-orange-800 p-6',
+        className
+      )}
+    >
       <div className='w-full mb-4 flex items-center justify-between'>
         <div className='hidden md:flex gap-x-2 items-center'>
           <button
@@ -49,7 +54,10 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
         <div className='flex justify-between items-center gap-x-4'>
           <>
             <div>
-              <Button onClick={() => {}} className='bg-transparent text-neutral-300 font-medium'>
+              <Button
+                onClick={() => {}}
+                className='bg-transparent text-neutral-300 font-medium'
+              >
                 Sign up
               </Button>
             </div>
