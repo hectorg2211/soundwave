@@ -8,7 +8,7 @@ const getSongsByTitle = async (title: string): Promise<Song[]> => {
     cookies: cookies,
   })
 
-  if (title) {
+  if (!title) {
     const allSongs = await getSongs()
     return allSongs
   }
