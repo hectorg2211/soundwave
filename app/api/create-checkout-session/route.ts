@@ -18,6 +18,7 @@ export async function POST(request: Request) {
     } = await supabase.auth.getUser()
     const customer = await createOrRetrieveACustomer({ email: user?.email || '', uuid: user?.id || '' })
 
+    // @ts-expect-error Unused
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
       billing_address_collection: 'required',
