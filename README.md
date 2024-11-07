@@ -2,7 +2,7 @@
 
 Soundwave is a modern, full-stack music streaming platform built with Next.js, React, and Supabase. It offers a sleek user interface for discovering and playing music, with features like user authentication, playlist creation, and premium subscriptions.
 
-![Soundwave Screenshot](path_to_screenshot.png)
+<!-- ![Soundwave Screenshot](path_to_screenshot.png) -->
 
 ## 🚀 Features
 
