@@ -90,7 +90,8 @@ const UploadModal = () => {
       reset()
       uploadModal.onClose()
     } catch (error) {
-      toast.error('Something went wrond')
+      console.log((error as Error).message)
+      toast.error('Something went wrong')
     } finally {
       setIsLoading(false)
     }
