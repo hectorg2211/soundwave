@@ -53,6 +53,10 @@ export interface Price {
   product?: Product
 }
 
+export interface ProductWithPrice extends Product {
+  prices?: Price[]
+}
+
 export interface Product {
   id: string
   active?: boolean

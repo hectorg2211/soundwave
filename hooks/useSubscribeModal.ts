@@ -1,12 +1,12 @@
 import { create } from 'zustand'
 
-interface AuthModalStore {
+interface SubscribeModalStore {
   isOpen: boolean
   onOpen: () => void
   onClose: () => void
 }
 
-const useAuthModal = create<AuthModalStore>(set => {
+const useSubscribeModal = create<SubscribeModalStore>(set => {
   return {
     isOpen: false,
     onOpen: () => set({ isOpen: true }),
@@ -14,4 +14,4 @@ const useAuthModal = create<AuthModalStore>(set => {
   }
 })
 
-export default useAuthModal
+export default useSubscribeModal
