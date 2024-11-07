@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Soundwave 🎵
 
-## Getting Started
+Soundwave is a modern, full-stack music streaming platform built with Next.js, React, and Supabase. It offers a sleek user interface for discovering and playing music, with features like user authentication, playlist creation, and premium subscriptions.
 
-First, run the development server:
+![Soundwave Screenshot](path_to_screenshot.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- User authentication with Supabase Auth
+- Music playback with custom audio player
+- Create and manage playlists
+- Search functionality for songs and artists
+- Responsive design for desktop and mobile
+- Premium subscription management with Stripe integration
+- Real-time updates using Supabase's real-time capabilities
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend**: Next.js, React, TypeScript
+- **Styling**: Tailwind CSS
+- **Backend**: Supabase (PostgreSQL database)
+- **Authentication**: Supabase Auth
+- **State Management**: Zustand
+- **Payment Processing**: Stripe
+- **Deployment**: Vercel
 
-## Learn More
+## 🏗️ Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `app/`: Next.js app router and page components
+- `components/`: Reusable React components
+- `hooks/`: Custom React hooks
+- `libs/`: Utility functions and configurations
+- `providers/`: React context providers
+- `public/`: Static assets
+- `types/`: TypeScript type definitions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
+   git clone https://github.com/yourusername/soundwave.git
 
-## Deploy on Vercel
+2. Install dependencies:
+   cd soundwave
+   npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Set up environment variables:
+   Create a `.env.local` file in the root directory and add your Supabase and Stripe credentials:
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   STRIPE_SECRET_KEY=your_stripe_secret_key
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Run the development server:
+   npm run dev
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/yourusername/soundwave/issues).
+
+## 👨‍💻 Author
+
+Your Name
+
+- GitHub: [@yourusername](https://github.com/yourusername)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+
+## 🙏 Acknowledgments
+
+- [Supabase](https://supabase.io/) for the amazing backend-as-a-service
+- [Next.js](https://nextjs.org/) for the powerful React framework
+- [Vercel](https://vercel.com/) for hosting and deployment
+
+---
+
+Give a ⭐️ if you like this project!
